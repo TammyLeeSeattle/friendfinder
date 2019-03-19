@@ -13,4 +13,9 @@ This application is hosted in Heroku! The front-end experience can be found here
 
 ## Tools used in this project
 
-- [INSERT]
+- express
+  - To install it: "npm i express"
+  - [https://www.npmjs.com/package/express](https://www.npmjs.com/package/express)
+- path
+  - To install it: "npm i path"
+  - [https://www.npmjs.com/package/path](https://www.npmjs.com/package/path)
