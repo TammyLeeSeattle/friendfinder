@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friend Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <!-- header text -->
+        <h2>
+            Survey Questions
+        </h2>
+
+        <hr>
+
+        <h3>About You</h3>
+
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required>
+
+        <h4>Link to Photo Image (Required)</h4>
+        <input type="text" id="photo" class="form-control" required>
+        
+        <hr>
+
+
+
+
+        <!-- Question 1 Presentation: text + button-->
+        <h4>
+            <strong>Question 1</strong>
+        </h4>
+        <h5>
+            Your mind is always buzzing with unexplored ideas and plans.
+        </h5>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Select an Option...</label>
+            </div>
+
+            <select class="custom-select col-md-3" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</a>
+                <option value="2">2</a>
+                <option value="3">3</a>
+                <option value="4">4</a>
+                <option value="5">5 (Strongly Agree)</a>
+            </select>
+        </div> <!-- end of div dropdown-->
+
+        <br>
+
+        <!-- Question 2 Presentation: text + button-->
+        <h4>
+            <strong>Question 2</strong>
+        </h4>
+        <h5>
+            Generally speaking, you rely more on your experience than your imagination.
+        </h5>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect02">Select an Option...</label>
+            </div>
+        
+            <select class="custom-select col-md-3" id="inputGroupSelect02">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</a>
+                <option value="2">2</a>
+                <option value="3">3</a>
+                <option value="4">4</a>
+                <option value="5">5 (Strongly Agree)</a>
+            </select>
+        </div> <!-- end of div dropdown-->
+
+        <br>
+
+        <!-- Question 3 Presentation: text + button-->
+        <h4>
+            <strong>Question 3</strong>
+        </h4>
+        <h5>
+            You find it easy to stay relaxed and focused even when there is some pressure.
+        </h5>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect03">Select an Option...</label>
+            </div>
+        
+            <select class="custom-select col-md-3" id="inputGroupSelect03">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</a>
+                <option value="2">2</a>
+                <option value="3">3</a>
+                <option value="4">4</a>
+                <option value="5">5 (Strongly Agree)</a>
+            </select>
+        </div> <!-- end of div dropdown-->
+
+        <br>
+
+        <!-- Question 4 Presentation: text + button-->
+        <h4>
+            <strong>Question 4</strong>
+        </h4>
+        <h5>
+            You rarely do something just out of sheer curiosity.
+        </h5>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect04">Select an Option...</label>
+            </div>
+        
+            <select class="custom-select col-md-3" id="inputGroupSelect04">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</a>
+                <option value="2">2</a>
+                <option value="3">3</a>
+                <option value="4">4</a>
+                <option value="5">5 (Strongly Agree)</a>
+            </select>
+        </div> <!-- end of div dropdown-->
+        
+        <br>
+
+        <!-- Question 5 Presentation: text + button-->
+        <h4>
+            <strong>Question 5</strong>
+        </h4>
+        <h5>
+            People can rarely upset you.
+        </h5>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect05">Select an Option...</label>
+            </div>
+        
+            <select class="custom-select col-md-3" id="inputGroupSelect05">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</a>
+                <option value="2">2</a>
+                <option value="3">3</a>
+                <option value="4">4</a>
+                <option value="5">5 (Strongly Agree)</a>
+            </select>
+        </div> <!-- end of div dropdown-->
+
+        <br>
+
+        <!-- Question 6 Presentation: text + button-->
+        <h4>
+            <strong>Question 6</strong>
+        </h4>
+        <h5>
+            It is often difficult for you to relate to other people’s feelings.
+        </h5>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect06">Select an Option...</label>
+            </div>
+        
+            <select class="custom-select col-md-3" id="inputGroupSelect06">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</a>
+                <option value="2">2</a>
+                <option value="3">3</a>
+                <option value="4">4</a>
+                <option value="5">5 (Strongly Agree)</a>
+            </select>
+        </div> <!-- end of div dropdown-->
+
+        <br>
+
+        <!-- Question 7 Presentation: text + button-->
+        <h4>
+            <strong>Question 7</strong>
+        </h4>
+        <h5>
+            In a discussion, truth should be more important than people’s sensitivities.
+        </h5>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect07">Select an Option...</label>
+            </div>
+        
+            <select class="custom-select col-md-3" id="inputGroupSelect07">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</a>
+                <option value="2">2</a>
+                <option value="3">3</a>
+                <option value="4">4</a>
+                <option value="5">5 (Strongly Agree)</a>
+            </select>
+        </div> <!-- end of div dropdown-->
+
+        <br>
+
+        <!-- Question 8 Presentation: text + button-->
+        <h4>
+            <strong>Question 8</strong>
+        </h4>
+        <h5>
+            You rarely get carried away by fantasies and ideas.
+        </h5>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect08">Select an Option...</label>
+            </div>
+        
+            <select class="custom-select col-md-3" id="inputGroupSelect08">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</a>
+                <option value="2">2</a>
+                <option value="3">3</a>
+                <option value="4">4</a>
+                <option value="5">5 (Strongly Agree)</a>
+            </select>
+        </div> <!-- end of div dropdown-->
+
+        <br>
+
+        <!-- Question 9 Presentation: text + button-->
+        <h4>
+            <strong>Question 9</strong>
+        </h4>
+        <h5>
+            You think that everyone’s views should be respected regardless of whether they are supported by facts or not.
+        </h5>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect09">Select an Option...</label>
+            </div>
+        
+            <select class="custom-select col-md-3" id="inputGroupSelect09">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</a>
+                <option value="2">2</a>
+                <option value="3">3</a>
+                <option value="4">4</a>
+                <option value="5">5 (Strongly Agree)</a>
+            </select>
+        </div> <!-- end of div dropdown-->
+
+        <br>
+
+        <!-- Question 10 Presentation: text + button-->
+        <h4>
+            <strong>Question 10</strong>
+        </h4>
+        <h5>
+            You feel more energetic after spending time with a group of people.
+        </h5>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect10">Select an Option...</label>
+            </div>
+        
+            <select class="custom-select col-md-3" id="inputGroupSelect10">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</a>
+                <option value="2">2</a>
+                <option value="3">3</a>
+                <option value="4">4</a>
+                <option value="5">5 (Strongly Agree)</a>
+            </select>
+        </div> <!-- end of div dropdown-->
+
+        <br>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-default btn-lg btn-block" id="submit">
+        <i class="far fa-check-circle" aria-hidden="true"></i>
+            Submit
+        </button>
+
+        <hr>
+
+    <br><br>
+    <!-- start of footer -->
+    <footer class="footer">
+        <div>
+            <p>
+                <a href="/api/friends">API Friends List</a> | <a href="https://github.com/TammyLeeSeattle/friendfinder.git">Github Repo</a>
+            </p>
+        </div>
+
+    </footer> <!-- end of footer container-->
+
+    </div> <!-- end of container -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Script Source Files -->
+
+
+
+
+
+    <!--- End of Script Source Files -->
+
+</body>
+</html>
