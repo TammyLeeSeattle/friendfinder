@@ -23,14 +23,12 @@ This application is hosted in Heroku! The front-end experience can be found here
   - To install it: "npm i body-parser"
   - [https://www.npmjs.com/package/body-parser](https://www.npmjs.com/package/body-parser)
 
-  ## HTML/CSS/JS Tools used in this project
-
-  - popper.js
-    - Used to display user form selections in drop down menus
-    - [https://popper.js.org/](https://popper.js.org/)
-  - font awesome
-    - Used for icons
-    - [https://fontawesome.com/?from=io](https://fontawesome.com/?from=io)
-
-  ## Images
-    - Background: [https://unsplash.com/](https://unsplash.com/)
+## HTML/CSS/JS Tools used in this project
+- popper.js
+  - Used to display user form selections in drop down menus
+  - [https://popper.js.org/](https://popper.js.org/)
+- font awesome
+  - Used for icons
+  - [https://fontawesome.com/?from=io](https://fontawesome.com/?from=io)
+## Images
+  - Background: [https://unsplash.com/](https://unsplash.com/)
