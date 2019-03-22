@@ -1,0 +1,8 @@
+/* Background image and positioning */
+body { 
+    background-image: url('dogfriend.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: rgb(17, 17, 17);
+}

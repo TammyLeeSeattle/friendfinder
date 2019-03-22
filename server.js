@@ -1,80 +1,51 @@
+// ==============================================================================
+// DEPENDENCIES
+// ==============================================================================
 
-    // Chosen CSS
-    var config = {
-        ".chosen-select": {},
-        ".chosen-select-deselect": {
-          allow_single_deselect: true
-        },
-        ".chosen-select-no-single": {
-          disable_search_threshold: 10
-        },
-        ".chosen-select-no-results": {
-          no_results_text: "Oops, nothing found!"
-        },
-        ".chosen-select-width": {
-          width: "95%"
-        }
-      };
-  
-      for (var selector in config) {
-        $(selector).chosen(config[selector]);
-      }
-  
-      // Capture the form inputs
-      $("#submit").on("click", function(event) {
-        event.preventDefault();
-  
-        // Form validation
-        function validateForm() {
-          var isValid = true;
-          $(".form-control").each(function() {
-            if ($(this).val() === "") {
-              isValid = false;
-            }
-          });
-  
-          $(".chosen-select").each(function() {
-  
-            if ($(this).val() === "") {
-              isValid = false;
-            }
-          });
-          return isValid;
-        }
-  
-        // If all required fields are filled
-        if (validateForm()) {
-          // Create an object for the user"s data
-          var userData = {
-            name: $("#name").val(),
-            photo: $("#photo").val(),
-            scores: [
-              $("#q1").val(),
-              $("#q2").val(),
-              $("#q3").val(),
-              $("#q4").val(),
-              $("#q5").val(),
-              $("#q6").val(),
-              $("#q7").val(),
-              $("#q8").val(),
-              $("#q9").val(),
-              $("#q10").val()
-            ]
-          };
-  
-          // AJAX post the data to the friends API.
-          $.post("/api/friends", userData, function(data) {
-  
-            // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-            $("#match-name").text(data.name);
-            $("#match-img").attr("src", data.photo);
-  
-            // Show the modal with the best match
-            $("#results-modal").modal("toggle");
-  
-          });
-        } else {
-          alert("Please fill out all fields before submitting!");
-        }
-      });
-    
+var express = require("express");
+var path = require("path");
+var bodyParser = require("body-parser");
+
+
+// ==============================================================================
+// EXPRESS CONFIGURATION
+// ==============================================================================
+
+// Tells node that we are creating an "express" server
+var app = express();
+
+// Sets an initial port. We"ll use this later in our listener
+var PORT = process.env.PORT || 8081;
+app.use(express.static('app/public'));
+
+// // Sets up the Express app to handle data parsing
+// app.use(express.urlencoded({ extended: true }));
+// app.use(express.json());
+
+// // Setup for the parser for the server to be able to interpret data
+// var jsonParser = bodyParser.json();
+
+app.use(bodyParser.urlencoded({ extended: true}));
+
+app.use(bodyParser.json({ type: 'applilication/*+json' }));
+
+app.use(bodyParser.raw({ type: 'application/vnd.custom-type' }));
+
+app.use(bodyParser.text({ type: 'text/html' }));
+
+app.use('/static', express.static(path.join(__dirname, 'app/public')))
+
+// ================================================================================
+// ROUTER
+// ================================================================================
+
+require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/htmlRoutes.js")(app);
+
+// =============================================================================
+// LISTENER
+// =============================================================================
+
+app.listen(PORT, function() {
+  console.log("App listening on PORT: " + PORT);
+});
