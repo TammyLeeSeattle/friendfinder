@@ -9,7 +9,7 @@ In this activity, you'll build a compatibility-based "FriendFinder" application.
 (**NOTE:** This assignment did not call for the types of friends that I chose, but hey, these are my favorite friends!)
 
 ## How to access it
-This application is hosted in Heroku! The front-end experience can be found here: [INSERT]. If you'd like to see the action behind the scenes, check out the github repo: [https://github.com/TammyLeeSeattle/friendfinder.git](https://github.com/TammyLeeSeattle/friendfinder.git).
+This application is hosted in Heroku! The front-end experience can be found here: [https://powerful-river-91045.herokuapp.com/](https://powerful-river-91045.herokuapp.com/). If you'd like to see the action behind the scenes, check out the github repo: [https://github.com/TammyLeeSeattle/friendfinder.git](https://github.com/TammyLeeSeattle/friendfinder.git).
 
 ## NPM Tools used in this project
 
